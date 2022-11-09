@@ -10,17 +10,23 @@ public class countDigit {
 
         System.out.print("Enter the number: ");
         num = in.nextInt();
-        System.out.print("Enter which digit you want to count in the num: ");
-        whichDigit=in.nextInt();
 
-        while (num>0){
-            int rem=num%10;
-            if (rem==whichDigit){
-                count++;
-            }
-            num /=10;
+        if (num==0){
+            System.out.print("This num only contains 0");
         }
-        System.out.println(count);
+        else {
+            System.out.print("Enter which digit you want to count in the num: ");
+            whichDigit = in.nextInt();
+
+            while (num > 0) {
+                int rem = num % 10;
+                if (rem == whichDigit) {
+                    count++;
+                }
+                num /= 10;
+            }
+        }
+        System.out.print(count);
 
     }
 }
