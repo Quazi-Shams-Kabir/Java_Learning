@@ -17,4 +17,3 @@ public class AreaofIsoscelesTriangle {
         }
     }
 }
-//Math.sqrt((4*(a*a))-(b*b))*b)/4
