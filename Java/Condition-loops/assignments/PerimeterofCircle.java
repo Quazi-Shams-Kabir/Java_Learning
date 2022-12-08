@@ -8,7 +8,7 @@ public class PerimeterofCircle {
             int r = in.nextInt();
             System.out.println("Perimeter of circle is: " + 2 * r * Math.PI);
 
-            System.out.print("Enter 0 to exit");
+            System.out.println("Enter 0 to exit");
             int loop = in.nextInt();
             if (loop == 0) break;
         }
