@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PerimeterofParallelogram {
+public class PerimeterofRectangle {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         while (true) {
@@ -8,7 +8,7 @@ public class PerimeterofParallelogram {
             int a = in.nextInt();
             System.out.println("Enter the length of the unparallel side: ");
             int b = in.nextInt();
-            System.out.println("Perimeter of parallelogram is " + 2*(a + b));
+            System.out.println("Perimeter of rectangle is " + 2*(a + b));
 
             System.out.println("Enter 0 to exit");
             int loop=in.nextInt();
