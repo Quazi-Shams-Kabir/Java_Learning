@@ -1,7 +1,7 @@
 public class Patterns {
     public static void main(String[] args) {
         int n=5;
-        pattern7(n);
+        pattern8(n);
     }
     static void pattern1(int n){
         for (int i = 0; i < n ; i++) {
@@ -67,6 +67,17 @@ public class Patterns {
                 System.out.print("  ");
             }
             for (int j = 0; j < n-i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern8(int n){
+        for (int i = 1; i <= n ; i++) {
+            for (int k = 0; k <n-i; k++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <=i+i-1; j++) {
                 System.out.print("* ");
             }
             System.out.println();
