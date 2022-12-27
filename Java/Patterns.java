@@ -1,7 +1,7 @@
 public class Patterns {
     public static void main(String[] args) {
         int n=5;
-        pattern16(n);
+        pattern17(n);
     }
     static void pattern1(int n){
         for (int i = 0; i < n ; i++) {
@@ -208,6 +208,32 @@ public class Patterns {
                 else
                     coef = coef * (i - k + 1) / k;
                 System.out.print(coef + " ");
+            }
+            System.out.println();
+        }
+    }   //need to check later
+    static void pattern17(int n){
+        for (int i = 1; i <=n ; i++) {
+            for (int k = 0; k <n-i ; k++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j >=1 ; j--) {
+                System.out.print(j);
+            }
+            for (int l = 2; l <=i ; l++) {
+                System.out.print(l);
+            }
+            System.out.println();
+        }
+        for (int i = n-1; i >0 ; i--) {
+            for (int k = 0; k <n-i ; k++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j >=1 ; j--) {
+                System.out.print(j);
+            }
+            for (int l = 2; l <=i ; l++) {
+                System.out.print(l);
             }
             System.out.println();
         }
